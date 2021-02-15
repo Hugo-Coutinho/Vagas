@@ -8,5 +8,10 @@
 
 import Foundation
 public enum UserDefaultsKey: String {
-    case offerId = "offerID"
+    case auth = "auth"
+    case tips = "tips"
+    case suggestion = "suggestion"
+    case survey = "survey"
+    case token = "token"
+    
 }

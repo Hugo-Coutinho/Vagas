@@ -18,6 +18,13 @@
 		5029FF5125DB07E50009936D /* HomeServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5025DB07E50009936D /* HomeServiceInput.swift */; };
 		5029FF5325DB08220009936D /* InteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5225DB08220009936D /* InteractorInput.swift */; };
 		5029FF5525DB082F0009936D /* PresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5425DB082F0009936D /* PresenterInput.swift */; };
+		5029FF6625DB14190009936D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6525DB14190009936D /* Constant.swift */; };
+		5029FF6825DB15C10009936D /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6725DB15C10009936D /* HomeService.swift */; };
+		5029FF6A25DB182A0009936D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6925DB182A0009936D /* HomeInteractor.swift */; };
+		5029FF6C25DB18F90009936D /* KeyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6B25DB18F90009936D /* KeyEntity.swift */; };
+		5029FF6E25DB1A550009936D /* TipsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6D25DB1A550009936D /* TipsEntity.swift */; };
+		5029FF7025DB1B450009936D /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6F25DB1B450009936D /* ProfileEntity.swift */; };
+		5029FF7225DB1CCC0009936D /* SuggestionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF7125DB1CCC0009936D /* SuggestionEntity.swift */; };
 		8F91022A38992A301365C4F4 /* Pods_Vagas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4476B0C134C2E842FA8C5125 /* Pods_Vagas.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +43,13 @@
 		5029FF5025DB07E50009936D /* HomeServiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceInput.swift; sourceTree = "<group>"; };
 		5029FF5225DB08220009936D /* InteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInput.swift; sourceTree = "<group>"; };
 		5029FF5425DB082F0009936D /* PresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInput.swift; sourceTree = "<group>"; };
+		5029FF6525DB14190009936D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Vagas/Feature/Home/Builder/Constant.swift; sourceTree = SOURCE_ROOT; };
+		5029FF6725DB15C10009936D /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		5029FF6925DB182A0009936D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		5029FF6B25DB18F90009936D /* KeyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEntity.swift; sourceTree = "<group>"; };
+		5029FF6D25DB1A550009936D /* TipsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsEntity.swift; sourceTree = "<group>"; };
+		5029FF6F25DB1B450009936D /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
+		5029FF7125DB1CCC0009936D /* SuggestionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionEntity.swift; sourceTree = "<group>"; };
 		633372022F9CCB348E34CC70 /* Pods-Vagas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.release.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.release.xcconfig"; sourceTree = "<group>"; };
 		8666AC6739453F6E17106E44 /* Pods-Vagas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.debug.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5029FF5025DB07E50009936D /* HomeServiceInput.swift */,
+				5029FF6725DB15C10009936D /* HomeService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -142,6 +157,10 @@
 		5029FF4425DB02240009936D /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				5029FF6B25DB18F90009936D /* KeyEntity.swift */,
+				5029FF6D25DB1A550009936D /* TipsEntity.swift */,
+				5029FF6F25DB1B450009936D /* ProfileEntity.swift */,
+				5029FF7125DB1CCC0009936D /* SuggestionEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -150,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				5029FF5225DB08220009936D /* InteractorInput.swift */,
+				5029FF6925DB182A0009936D /* HomeInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -181,6 +201,7 @@
 		5029FF4925DB02540009936D /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				5029FF6525DB14190009936D /* Constant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -334,12 +355,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5029FF2F25DAFF560009936D /* ViewController.swift in Sources */,
+				5029FF6E25DB1A550009936D /* TipsEntity.swift in Sources */,
+				5029FF6A25DB182A0009936D /* HomeInteractor.swift in Sources */,
 				5029FF5325DB08220009936D /* InteractorInput.swift in Sources */,
+				5029FF6625DB14190009936D /* Constant.swift in Sources */,
+				5029FF6C25DB18F90009936D /* KeyEntity.swift in Sources */,
 				5029FF2B25DAFF560009936D /* AppDelegate.swift in Sources */,
+				5029FF7225DB1CCC0009936D /* SuggestionEntity.swift in Sources */,
+				5029FF6825DB15C10009936D /* HomeService.swift in Sources */,
 				5029FF4D25DB06850009936D /* UserDefaultsHelper.swift in Sources */,
 				5029FF5125DB07E50009936D /* HomeServiceInput.swift in Sources */,
 				5029FF2D25DAFF560009936D /* SceneDelegate.swift in Sources */,
 				5029FF4F25DB06A80009936D /* UserDefaultsKey.swift in Sources */,
+				5029FF7025DB1B450009936D /* ProfileEntity.swift in Sources */,
 				5029FF5525DB082F0009936D /* PresenterInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

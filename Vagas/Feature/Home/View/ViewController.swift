@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let service: HomeServiceInput = HomeService()
+        let interactor: HomeInteractorInput = HomeInteractor(service: service)
+//        interactor.getKeys()
+//        interactor.getProfile()
+        interactor.getSuggestion()
+//        interactor.getTips()
     }
-
-
 }
 
