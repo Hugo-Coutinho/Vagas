@@ -10,12 +10,12 @@ import Foundation
 
 // MARK: - Tips
 struct TipsEntity: Codable {
-    let id, welcomeDescription: String?
+    let id, description: String?
     let button: Button?
 
     enum CodingKeys: String, CodingKey {
         case id
-        case welcomeDescription = "description"
+        case description = "description"
         case button
     }
 }

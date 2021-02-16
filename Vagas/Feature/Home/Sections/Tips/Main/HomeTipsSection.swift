@@ -1,5 +1,5 @@
 //
-//  HomeSuggestionSection.swift
+//  HomeTipsSection.swift
 //  Vagas
 //
 //  Created by Hugo Coutinho on 16/02/21.
@@ -9,54 +9,50 @@
 import Foundation
 import UIKit
 
-protocol HomeSuggestionSectionOutput: SectionOutput {
+// MARK: - VIEW CONTROLLER DELEGATE -
+protocol HomeTipsSectionOutput: SectionOutput {
     
 }
 
-final class HomeSuggestionSection: Section {
+final class HomeTipsSection: Section {
     
     // MARK: - VARIABLES -
-    var presenter: HomeSuggestionSectionPresenterInput?
-    private var suggestion: HomeSuggestionSectionDomain!
+    var presenter: HomeTipsSectionPresenterInput?
+    private var tips: HomeTipsSectionDomain!
     
     // MARK: - CONSTRUCTORS -
     override init() {
         super.init()
         self.items = [NSObject()]
-        self.suggestion = HomeSuggestionSectionDomain()
+        self.tips = HomeTipsSectionDomain()
     }
     
     // MARK: - INPUT METHODS -
     func startSection() {
-        presenter?.getSuggestion()
+        presenter?.getTips()
     }
 }
 
 // MARK: - TABLEVIEW SECTION INPUT -
-extension HomeSuggestionSection: TableSectionCellInput {
+extension HomeTipsSection: TableSectionCellInput {
     
     func didSelectCell(_ cell: UITableViewCell, at indexPath: IndexPath) {}
     
     func cell(for indexPath: IndexPath) -> UITableViewCell.Type {
         switch self.scene {
         case .sceneSuccess:
-            return HomeSuggestionSectionSuccessTableViewCell.self
+            return HomeTipsSectionSuccessTableViewCell.self
         default:
-            return LoadingTableViewCell.self
+            return HomeTipsSectionSuccessTableViewCell.self
         }
     }
     
     func willDisplayCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
-        switch self.scene {
-        case .sceneSuccess:
-            
-            guard let cell = cell as? HomeSuggestionSectionSuccessTableViewCell else { return }
-            cell.delegate = self
-            cell.setup(suggestion: self.suggestion)
-            
-        default:
-            break;
-        }
+        guard let cell = cell as? HomeTipsSectionSuccessTableViewCell,
+            self.tips.tips.count > 0 else { return }
+        cell.delegate = self
+        cell.setup(tips: self.tips)
+        
     }
     
     func heightForRowInSection(indexPath: IndexPath) -> CGFloat {
@@ -65,11 +61,11 @@ extension HomeSuggestionSection: TableSectionCellInput {
 }
 
 // MARK: - PRESENTER OUTPUT -
-extension HomeSuggestionSection : HomeSuggestionSectionPresenterOutput {
-    func handleSuccess(suggestion: HomeSuggestionSectionDomain) {
+extension HomeTipsSection : HomeTipsSectionPresenterOutput {
+    func handleSuccess(tips: HomeTipsSectionDomain) {
         self.scene = .sceneSuccess
-        self.suggestion = suggestion
-        self.items = [suggestion.suggestions]
+        self.tips = tips
+        self.items = [tips.tips]
         self.output?.reloadSection(section: self, animation: .automatic)
     }
     
@@ -80,7 +76,7 @@ extension HomeSuggestionSection : HomeSuggestionSectionPresenterOutput {
 
 
 // MARK: - SUCCESS CELL OUTPUT -
-extension HomeSuggestionSection: HomeSuggestionSectionSuccessDelegate {
+extension HomeTipsSection: HomeTipsSectionSuccessDelegate {
     
 }
 

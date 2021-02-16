@@ -13,7 +13,4 @@ protocol HomeServiceInput: class {
     
     // MARK: - INPUT METHODS -
     func getKeys(completionHandler: @escaping (Data) -> Void)
-    func getProfile(authorization: String, completionHandler: @escaping (Data) -> Void)
-    func getSuggestion(token: String, suggestionHeader: String, completionHandler: @escaping (Data) -> Void)
-    func getTips(tipsHeader: String, completionHandler: @escaping (Data) -> Void)
 }

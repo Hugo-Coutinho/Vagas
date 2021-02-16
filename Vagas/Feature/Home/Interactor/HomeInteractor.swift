@@ -31,48 +31,6 @@ class HomeInteractor: HomeInteractorInput {
             }
         }
     }
-    
-    func getTips() {
-        guard let tipsHeader: String = UserDefaultsHelper.getValueForKey(.tips) else { return }
-        self.service.getTips(tipsHeader: tipsHeader) { (data) in
-            do {
-                let tips = try JSONDecoder().decode(Tips.self, from: data)
-                
-                self.output?.handleSuccess()
-            } catch {
-                print("error scene")
-            }
-        }
-    }
-    
-    func getProfile() {
-        guard let auth: String = UserDefaultsHelper.getValueForKey(.auth) else { return }
-        self.service.getProfile(authorization: auth) { (data) in
-            do {
-                let profile = try JSONDecoder().decode(ProfileEntity.self, from: data)
-                if let token = profile.token {
-                UserDefaultsHelper.setValueStringForKey(value: token, key: .token)
-                }
-                self.output?.handleProfileSuccess(profile: profile)
-            } catch {
-                print("error scene")
-            }
-        }
-    }
-    
-    func getSuggestion() {
-        guard let suggestion: String = UserDefaultsHelper.getValueForKey(.suggestion),
-            let token = UserDefaultsHelper.getValueForKey(.token) else { return }
-        self.service.getSuggestion(token: token, suggestionHeader: suggestion) { (data) in
-            do {
-                let sug = try JSONDecoder().decode(Suggestions.self, from: data)
-                
-                self.output?.handleSuccess()
-            } catch {
-                print("error scene")
-            }
-        }
-    }
 }
 
 // MARK: - AUX METHODS -

@@ -16,8 +16,8 @@
 		5029FF4D25DB06850009936D /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF4C25DB06850009936D /* UserDefaultsHelper.swift */; };
 		5029FF4F25DB06A80009936D /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF4E25DB06A80009936D /* UserDefaultsKey.swift */; };
 		5029FF5125DB07E50009936D /* HomeServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5025DB07E50009936D /* HomeServiceInput.swift */; };
-		5029FF5325DB08220009936D /* InteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5225DB08220009936D /* InteractorInput.swift */; };
-		5029FF5525DB082F0009936D /* PresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5425DB082F0009936D /* PresenterInput.swift */; };
+		5029FF5325DB08220009936D /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5225DB08220009936D /* HomeInteractorInput.swift */; };
+		5029FF5525DB082F0009936D /* HomePresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF5425DB082F0009936D /* HomePresenterInput.swift */; };
 		5029FF6625DB14190009936D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6525DB14190009936D /* Constant.swift */; };
 		5029FF6825DB15C10009936D /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6725DB15C10009936D /* HomeService.swift */; };
 		5029FF6A25DB182A0009936D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6925DB182A0009936D /* HomeInteractor.swift */; };
@@ -42,6 +42,21 @@
 		5087C9FA25DC42DF007141F1 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C9F925DC42DF007141F1 /* UITableView.swift */; };
 		5087C9FC25DC42F4007141F1 /* ReusableCellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C9FB25DC42F4007141F1 /* ReusableCellIdentifiable.swift */; };
 		5087C9FE25DC43AF007141F1 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C9FD25DC43AF007141F1 /* UICollectionView.swift */; };
+		5087CA0B25DC573B007141F1 /* HomeTipsSectionServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA0A25DC573B007141F1 /* HomeTipsSectionServiceInput.swift */; };
+		5087CA0D25DC5773007141F1 /* HomeTipsSectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA0C25DC5773007141F1 /* HomeTipsSectionService.swift */; };
+		5087CA0F25DC57EA007141F1 /* HomeTipsSectionInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA0E25DC57EA007141F1 /* HomeTipsSectionInteractorInput.swift */; };
+		5087CA1125DC5836007141F1 /* HomeTipsSectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1025DC5836007141F1 /* HomeTipsSectionInteractor.swift */; };
+		5087CA1325DC58F3007141F1 /* HomeTipsSectionPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1225DC58F3007141F1 /* HomeTipsSectionPresenterInput.swift */; };
+		5087CA1525DC594A007141F1 /* HomeTipsSectionDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1425DC594A007141F1 /* HomeTipsSectionDomain.swift */; };
+		5087CA1725DC5BA8007141F1 /* HomeTipsSectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1625DC5BA8007141F1 /* HomeTipsSectionPresenter.swift */; };
+		5087CA1925DC5C4F007141F1 /* HomeTipsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1825DC5C4F007141F1 /* HomeTipsSection.swift */; };
+		5087CA1C25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1A25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.swift */; };
+		5087CA1D25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5087CA1B25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.xib */; };
+		5087CA1F25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1E25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift */; };
+		5087CA2125DC60D0007141F1 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA2025DC60D0007141F1 /* HomeBuilder.swift */; };
+		5087CA2325DC6184007141F1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA2225DC6184007141F1 /* HomePresenter.swift */; };
+		5087CA2625DC653D007141F1 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA2425DC653D007141F1 /* LoadingTableViewCell.swift */; };
+		5087CA2725DC653D007141F1 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5087CA2525DC653D007141F1 /* LoadingTableViewCell.xib */; };
 		50D6437525DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */; };
 		50D6437725DC0CC7001EA9BF /* HomeHeaderSectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */; };
 		50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */; };
@@ -76,8 +91,8 @@
 		5029FF4C25DB06850009936D /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		5029FF4E25DB06A80009936D /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		5029FF5025DB07E50009936D /* HomeServiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceInput.swift; sourceTree = "<group>"; };
-		5029FF5225DB08220009936D /* InteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInput.swift; sourceTree = "<group>"; };
-		5029FF5425DB082F0009936D /* PresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInput.swift; sourceTree = "<group>"; };
+		5029FF5225DB08220009936D /* HomeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
+		5029FF5425DB082F0009936D /* HomePresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterInput.swift; sourceTree = "<group>"; };
 		5029FF6525DB14190009936D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Vagas/Feature/Home/Builder/Constant.swift; sourceTree = SOURCE_ROOT; };
 		5029FF6725DB15C10009936D /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		5029FF6925DB182A0009936D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -102,6 +117,21 @@
 		5087C9F925DC42DF007141F1 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		5087C9FB25DC42F4007141F1 /* ReusableCellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellIdentifiable.swift; sourceTree = "<group>"; };
 		5087C9FD25DC43AF007141F1 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		5087CA0A25DC573B007141F1 /* HomeTipsSectionServiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionServiceInput.swift; sourceTree = "<group>"; };
+		5087CA0C25DC5773007141F1 /* HomeTipsSectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionService.swift; sourceTree = "<group>"; };
+		5087CA0E25DC57EA007141F1 /* HomeTipsSectionInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionInteractorInput.swift; sourceTree = "<group>"; };
+		5087CA1025DC5836007141F1 /* HomeTipsSectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionInteractor.swift; sourceTree = "<group>"; };
+		5087CA1225DC58F3007141F1 /* HomeTipsSectionPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionPresenterInput.swift; sourceTree = "<group>"; };
+		5087CA1425DC594A007141F1 /* HomeTipsSectionDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionDomain.swift; sourceTree = "<group>"; };
+		5087CA1625DC5BA8007141F1 /* HomeTipsSectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionPresenter.swift; sourceTree = "<group>"; };
+		5087CA1825DC5C4F007141F1 /* HomeTipsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSection.swift; sourceTree = "<group>"; };
+		5087CA1A25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionSuccessTableViewCell.swift; sourceTree = "<group>"; };
+		5087CA1B25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTipsSectionSuccessTableViewCell.xib; sourceTree = "<group>"; };
+		5087CA1E25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionBuilder.swift; sourceTree = "<group>"; };
+		5087CA2025DC60D0007141F1 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		5087CA2225DC6184007141F1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		5087CA2425DC653D007141F1 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		5087CA2525DC653D007141F1 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionServiceInput.swift; sourceTree = "<group>"; };
 		50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionService.swift; sourceTree = "<group>"; };
 		50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
@@ -173,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				5029FF4225DB02120009936D /* Home */,
+				5087CA2425DC653D007141F1 /* LoadingTableViewCell.swift */,
+				5087CA2525DC653D007141F1 /* LoadingTableViewCell.xib */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -230,9 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				5029FF6B25DB18F90009936D /* KeyEntity.swift */,
-				5029FF6D25DB1A550009936D /* TipsEntity.swift */,
-				5029FF6F25DB1B450009936D /* ProfileEntity.swift */,
-				5029FF7125DB1CCC0009936D /* SuggestionEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -240,7 +269,7 @@
 		5029FF4525DB02290009936D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				5029FF5225DB08220009936D /* InteractorInput.swift */,
+				5029FF5225DB08220009936D /* HomeInteractorInput.swift */,
 				5029FF6925DB182A0009936D /* HomeInteractor.swift */,
 			);
 			path = Interactor;
@@ -249,7 +278,8 @@
 		5029FF4625DB02310009936D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				5029FF5425DB082F0009936D /* PresenterInput.swift */,
+				5029FF5425DB082F0009936D /* HomePresenterInput.swift */,
+				5087CA2225DC6184007141F1 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -293,6 +323,7 @@
 		5029FF5625DB08410009936D /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				5087CA2025DC60D0007141F1 /* HomeBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -310,6 +341,7 @@
 		5029FF7425DB2BF80009936D /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				5087CA0125DC5687007141F1 /* Entity */,
 				50D6438025DC12E2001EA9BF /* Main */,
 				50D6437325DC0C38001EA9BF /* Service */,
 				50D6437225DC0C32001EA9BF /* Interactor */,
@@ -324,6 +356,14 @@
 		5029FF7525DB2C0C0009936D /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				5087CA0925DC56D3007141F1 /* Main */,
+				5087CA0825DC56CD007141F1 /* Service */,
+				5087CA0725DC56C6007141F1 /* Interactor */,
+				5087CA0625DC56C2007141F1 /* View */,
+				5087CA0525DC56BD007141F1 /* Domain */,
+				5087CA0425DC56B8007141F1 /* Presenter */,
+				5087CA0325DC56B3007141F1 /* Builder */,
+				5087CA0225DC56A8007141F1 /* Entity */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -331,6 +371,7 @@
 		5029FF7625DB2C110009936D /* Suggestion */ = {
 			isa = PBXGroup;
 			children = (
+				5087CA0025DC5672007141F1 /* Entity */,
 				50D6438725DC1316001EA9BF /* Builder */,
 				50D6438625DC1311001EA9BF /* Presenter */,
 				50D6438525DC1309001EA9BF /* Domain */,
@@ -405,6 +446,90 @@
 				5029FF9925DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5087CA0025DC5672007141F1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF7125DB1CCC0009936D /* SuggestionEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5087CA0125DC5687007141F1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF6F25DB1B450009936D /* ProfileEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5087CA0225DC56A8007141F1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF6D25DB1A550009936D /* TipsEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5087CA0325DC56B3007141F1 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA1E25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		5087CA0425DC56B8007141F1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA1225DC58F3007141F1 /* HomeTipsSectionPresenterInput.swift */,
+				5087CA1625DC5BA8007141F1 /* HomeTipsSectionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5087CA0525DC56BD007141F1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA1425DC594A007141F1 /* HomeTipsSectionDomain.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5087CA0625DC56C2007141F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA1A25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.swift */,
+				5087CA1B25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5087CA0725DC56C6007141F1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA0E25DC57EA007141F1 /* HomeTipsSectionInteractorInput.swift */,
+				5087CA1025DC5836007141F1 /* HomeTipsSectionInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5087CA0825DC56CD007141F1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA0A25DC573B007141F1 /* HomeTipsSectionServiceInput.swift */,
+				5087CA0C25DC5773007141F1 /* HomeTipsSectionService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5087CA0925DC56D3007141F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA1825DC5C4F007141F1 /* HomeTipsSection.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		50D6437225DC0C32001EA9BF /* Interactor */ = {
@@ -606,10 +731,12 @@
 			files = (
 				5029FF3725DAFF590009936D /* LaunchScreen.storyboard in Resources */,
 				5029FF9B25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib in Resources */,
+				5087CA2725DC653D007141F1 /* LoadingTableViewCell.xib in Resources */,
 				50D6439925DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib in Resources */,
 				5029FF3425DAFF590009936D /* Assets.xcassets in Resources */,
 				5029FF3225DAFF560009936D /* Main.storyboard in Resources */,
 				50D643A325DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib in Resources */,
+				5087CA1D25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,10 +790,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5029FF7D25DB2EB50009936D /* Section.swift in Sources */,
+				5087CA0B25DC573B007141F1 /* HomeTipsSectionServiceInput.swift in Sources */,
 				5029FF9625DBFD740009936D /* UIImageView.swift in Sources */,
 				5029FF2F25DAFF560009936D /* HomeViewController.swift in Sources */,
 				5029FF6E25DB1A550009936D /* TipsEntity.swift in Sources */,
+				5087CA1725DC5BA8007141F1 /* HomeTipsSectionPresenter.swift in Sources */,
 				50D6437F25DC0DF7001EA9BF /* HomeSectionHeaderInteractor.swift in Sources */,
+				5087CA2325DC6184007141F1 /* HomePresenter.swift in Sources */,
 				5087C9FE25DC43AF007141F1 /* UICollectionView.swift in Sources */,
 				50D6439525DC16DF001EA9BF /* HomeSuggestionSectionPresenter.swift in Sources */,
 				50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */,
@@ -674,18 +804,22 @@
 				50D6438925DC1353001EA9BF /* HomeSuggestionSectionServiceInput.swift in Sources */,
 				50D643A225DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift in Sources */,
 				5029FF6A25DB182A0009936D /* HomeInteractor.swift in Sources */,
-				5029FF5325DB08220009936D /* InteractorInput.swift in Sources */,
+				5087CA1C25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.swift in Sources */,
+				5029FF5325DB08220009936D /* HomeInteractorInput.swift in Sources */,
 				5029FF8225DB2EEC0009936D /* SectionOutput.swift in Sources */,
 				5029FF6625DB14190009936D /* Constant.swift in Sources */,
 				5087C9FC25DC42F4007141F1 /* ReusableCellIdentifiable.swift in Sources */,
 				50D6439325DC15A5001EA9BF /* HomeSuggestionSectionDomain.swift in Sources */,
+				5087CA1F25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift in Sources */,
 				50D6438F25DC148A001EA9BF /* HomeSuggestionSectionInteractor.swift in Sources */,
 				5029FF6C25DB18F90009936D /* KeyEntity.swift in Sources */,
+				5087CA1325DC58F3007141F1 /* HomeTipsSectionPresenterInput.swift in Sources */,
 				5029FF2B25DAFF560009936D /* AppDelegate.swift in Sources */,
 				5029FF7225DB1CCC0009936D /* SuggestionEntity.swift in Sources */,
 				5029FF6825DB15C10009936D /* HomeService.swift in Sources */,
 				5029FF9A25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift in Sources */,
 				50D6439125DC155D001EA9BF /* HomeSuggestionSectionPresenterInput.swift in Sources */,
+				5087CA0D25DC5773007141F1 /* HomeTipsSectionService.swift in Sources */,
 				5029FF7B25DB2E8B0009936D /* ReusableIdentifier.swift in Sources */,
 				5029FF8925DB357B0009936D /* HomeHeaderSectionBuilder.swift in Sources */,
 				5029FF8B25DB358E0009936D /* HomeHeaderSection.swift in Sources */,
@@ -697,16 +831,22 @@
 				5029FF9025DB374E0009936D /* HomeHeaderSectionPresenter.swift in Sources */,
 				5029FF2D25DAFF560009936D /* SceneDelegate.swift in Sources */,
 				5087C9FA25DC42DF007141F1 /* UITableView.swift in Sources */,
+				5087CA1925DC5C4F007141F1 /* HomeTipsSection.swift in Sources */,
+				5087CA1525DC594A007141F1 /* HomeTipsSectionDomain.swift in Sources */,
 				50D6438D25DC144D001EA9BF /* HomeSuggestionSectionInteractorInput.swift in Sources */,
+				5087CA0F25DC57EA007141F1 /* HomeTipsSectionInteractorInput.swift in Sources */,
 				5029FF7F25DB2ECD0009936D /* SectionInput.swift in Sources */,
 				5029FF4F25DB06A80009936D /* UserDefaultsKey.swift in Sources */,
 				5029FF7025DB1B450009936D /* ProfileEntity.swift in Sources */,
 				5029FF8625DB2F710009936D /* Thread.swift in Sources */,
+				5087CA2625DC653D007141F1 /* LoadingTableViewCell.swift in Sources */,
 				50D6437525DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift in Sources */,
-				5029FF5525DB082F0009936D /* PresenterInput.swift in Sources */,
+				5029FF5525DB082F0009936D /* HomePresenterInput.swift in Sources */,
 				5029FF8E25DB36110009936D /* HomeHeaderSectionPresenterInput.swift in Sources */,
+				5087CA2125DC60D0007141F1 /* HomeBuilder.swift in Sources */,
 				50D6439B25DC1886001EA9BF /* HomeSuggestionSection.swift in Sources */,
 				50D6437D25DC0DAE001EA9BF /* HomeHeaderSectionInteractorInput.swift in Sources */,
+				5087CA1125DC5836007141F1 /* HomeTipsSectionInteractor.swift in Sources */,
 				50D6439825DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.swift in Sources */,
 				50D6437725DC0CC7001EA9BF /* HomeHeaderSectionService.swift in Sources */,
 			);

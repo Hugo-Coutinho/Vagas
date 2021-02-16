@@ -10,17 +10,27 @@ import UIKit
 
 class HomeViewController: TableViewController {
 
+    // MARK: - VARIABLES -
+    private var presenter: HomePresenterInput!
+    
+    // MARK: - LIFE CYCLE -
     override func viewDidLoad() {
         super.viewDidLoad()
-        let service: HomeServiceInput = HomeService()
-        let interactor: HomeInteractorInput = HomeInteractor(service: service)
-        interactor.getKeys()
-//        interactor.getProfile()
-//        interactor.getSuggestion()
-//        interactor.getTips()
+        self.presenter = HomeBuilder().make(viewController: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.presenter.getKeys()
+    }
+}
+
+// MARK: - HEADER SECTION OUTPUT -
+extension HomeViewController: HomePresenterOutput {
+    func handleSuccess() {
         self.sections = [
             HomeHeaderSectionBuilder().make(output: self),
             HomeSuggestionSectionBuilder().make(output: self),
+            HomeTipsSectionBuilder().make(output: self),
         ]
         self.tableView.reloadData()
     }
@@ -34,6 +44,12 @@ extension HomeViewController: HomeHeaderSectionOutput {
 
 // MARK: - SUGGESTION SECTION OUTPUT -
 extension HomeViewController: HomeSuggestionSectionOutput {
+    
+}
+
+
+// MARK: - TIPS SECTION OUTPUT -
+extension HomeViewController: HomeTipsSectionOutput {
     
 }
 

@@ -17,15 +17,11 @@ protocol HomeInteractorInput: class {
     
     // MARK: - INPUT METHODS -
     func getKeys()
-    func getTips()
-    func getProfile()
-    func getSuggestion()
 }
 
 // MARK: - INTERACTOR OUTPUT PROTOCOL -
 protocol HomeInteractorOutput: class {
     
     // MARK: - OUTPUT METHODS -
-    func handleProfileSuccess(profile: ProfileEntity)
     func handleSuccess()
 }
