@@ -26,5 +26,6 @@ protocol HomeInteractorInput: class {
 protocol HomeInteractorOutput: class {
     
     // MARK: - OUTPUT METHODS -
-    func handleFeedSuccess()
+    func handleProfileSuccess(profile: ProfileEntity)
+    func handleSuccess()
 }

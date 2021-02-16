@@ -22,5 +22,9 @@ struct Constant {
             public static let xApiKey = "x-api-key"
         }
     }
+    
+    struct ImageName {
+        public static let user = "user"
+    }
 }
 

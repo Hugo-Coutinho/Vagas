@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5029FF2B25DAFF560009936D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF2A25DAFF560009936D /* AppDelegate.swift */; };
 		5029FF2D25DAFF560009936D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF2C25DAFF560009936D /* SceneDelegate.swift */; };
-		5029FF2F25DAFF560009936D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF2E25DAFF560009936D /* ViewController.swift */; };
+		5029FF2F25DAFF560009936D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF2E25DAFF560009936D /* HomeViewController.swift */; };
 		5029FF3225DAFF560009936D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029FF3025DAFF560009936D /* Main.storyboard */; };
 		5029FF3425DAFF590009936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5029FF3325DAFF590009936D /* Assets.xcassets */; };
 		5029FF3725DAFF590009936D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029FF3525DAFF590009936D /* LaunchScreen.storyboard */; };
@@ -25,6 +25,25 @@
 		5029FF6E25DB1A550009936D /* TipsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6D25DB1A550009936D /* TipsEntity.swift */; };
 		5029FF7025DB1B450009936D /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF6F25DB1B450009936D /* ProfileEntity.swift */; };
 		5029FF7225DB1CCC0009936D /* SuggestionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF7125DB1CCC0009936D /* SuggestionEntity.swift */; };
+		5029FF7B25DB2E8B0009936D /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF7A25DB2E8B0009936D /* ReusableIdentifier.swift */; };
+		5029FF7D25DB2EB50009936D /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF7C25DB2EB50009936D /* Section.swift */; };
+		5029FF7F25DB2ECD0009936D /* SectionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF7E25DB2ECD0009936D /* SectionInput.swift */; };
+		5029FF8225DB2EEC0009936D /* SectionOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF8125DB2EEC0009936D /* SectionOutput.swift */; };
+		5029FF8425DB2F0C0009936D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF8325DB2F0C0009936D /* TableViewController.swift */; };
+		5029FF8625DB2F710009936D /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF8525DB2F710009936D /* Thread.swift */; };
+		5029FF8925DB357B0009936D /* HomeHeaderSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF8825DB357A0009936D /* HomeHeaderSectionBuilder.swift */; };
+		5029FF8B25DB358E0009936D /* HomeHeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF8A25DB358E0009936D /* HomeHeaderSection.swift */; };
+		5029FF8E25DB36110009936D /* HomeHeaderSectionPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF8D25DB36110009936D /* HomeHeaderSectionPresenterInput.swift */; };
+		5029FF9025DB374E0009936D /* HomeHeaderSectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF8F25DB374E0009936D /* HomeHeaderSectionPresenter.swift */; };
+		5029FF9325DB49A60009936D /* HomeHeaderSectionDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF9225DB49A60009936D /* HomeHeaderSectionDomain.swift */; };
+		5029FF9625DBFD740009936D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF9525DBFD740009936D /* UIImageView.swift */; };
+		5029FF9A25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF9825DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift */; };
+		5029FF9B25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5029FF9925DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib */; };
+		50D6437525DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */; };
+		50D6437725DC0CC7001EA9BF /* HomeHeaderSectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */; };
+		50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */; };
+		50D6437D25DC0DAE001EA9BF /* HomeHeaderSectionInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437C25DC0DAE001EA9BF /* HomeHeaderSectionInteractorInput.swift */; };
+		50D6437F25DC0DF7001EA9BF /* HomeSectionHeaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437E25DC0DF7001EA9BF /* HomeSectionHeaderInteractor.swift */; };
 		8F91022A38992A301365C4F4 /* Pods_Vagas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4476B0C134C2E842FA8C5125 /* Pods_Vagas.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +52,7 @@
 		5029FF2725DAFF560009936D /* Vagas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vagas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5029FF2A25DAFF560009936D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5029FF2C25DAFF560009936D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5029FF2E25DAFF560009936D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5029FF2E25DAFF560009936D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5029FF3125DAFF560009936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5029FF3325DAFF590009936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5029FF3625DAFF590009936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +69,25 @@
 		5029FF6D25DB1A550009936D /* TipsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsEntity.swift; sourceTree = "<group>"; };
 		5029FF6F25DB1B450009936D /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
 		5029FF7125DB1CCC0009936D /* SuggestionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionEntity.swift; sourceTree = "<group>"; };
+		5029FF7A25DB2E8B0009936D /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
+		5029FF7C25DB2EB50009936D /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		5029FF7E25DB2ECD0009936D /* SectionInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionInput.swift; sourceTree = "<group>"; };
+		5029FF8125DB2EEC0009936D /* SectionOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOutput.swift; sourceTree = "<group>"; };
+		5029FF8325DB2F0C0009936D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5029FF8525DB2F710009936D /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		5029FF8825DB357A0009936D /* HomeHeaderSectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionBuilder.swift; sourceTree = "<group>"; };
+		5029FF8A25DB358E0009936D /* HomeHeaderSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSection.swift; sourceTree = "<group>"; };
+		5029FF8D25DB36110009936D /* HomeHeaderSectionPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionPresenterInput.swift; sourceTree = "<group>"; };
+		5029FF8F25DB374E0009936D /* HomeHeaderSectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionPresenter.swift; sourceTree = "<group>"; };
+		5029FF9225DB49A60009936D /* HomeHeaderSectionDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionDomain.swift; sourceTree = "<group>"; };
+		5029FF9525DBFD740009936D /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		5029FF9825DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionSuccessTableViewCell.swift; sourceTree = "<group>"; };
+		5029FF9925DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderSectionSuccessTableViewCell.xib; sourceTree = "<group>"; };
+		50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionServiceInput.swift; sourceTree = "<group>"; };
+		50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionService.swift; sourceTree = "<group>"; };
+		50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		50D6437C25DC0DAE001EA9BF /* HomeHeaderSectionInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionInteractorInput.swift; sourceTree = "<group>"; };
+		50D6437E25DC0DF7001EA9BF /* HomeSectionHeaderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderInteractor.swift; sourceTree = "<group>"; };
 		633372022F9CCB348E34CC70 /* Pods-Vagas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.release.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.release.xcconfig"; sourceTree = "<group>"; };
 		8666AC6739453F6E17106E44 /* Pods-Vagas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.debug.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +148,7 @@
 		5029FF3F25DB012E0009936D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5029FF7825DB2E620009936D /* Components */,
 				5029FF4925DB02540009936D /* Constant */,
 				5029FF4825DB024E0009936D /* Helper */,
 			);
@@ -135,6 +174,7 @@
 		5029FF4225DB02120009936D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5029FF7325DB2BEA0009936D /* Sections */,
 				5029FF5625DB08410009936D /* Builder */,
 				5029FF4725DB02420009936D /* View */,
 				5029FF4625DB02310009936D /* Presenter */,
@@ -185,7 +225,7 @@
 		5029FF4725DB02420009936D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5029FF2E25DAFF560009936D /* ViewController.swift */,
+				5029FF2E25DAFF560009936D /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +233,9 @@
 		5029FF4825DB024E0009936D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				50D6437925DC0D18001EA9BF /* BaseRequest */,
+				50D6437825DC0D0A001EA9BF /* Thread */,
+				5029FF9425DBFD5E0009936D /* Extension */,
 				5029FF4A25DB06700009936D /* UserDefaults */,
 			);
 			path = Helper;
@@ -220,6 +263,140 @@
 			children = (
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		5029FF7325DB2BEA0009936D /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF7625DB2C110009936D /* Suggestion */,
+				5029FF7525DB2C0C0009936D /* Tips */,
+				5029FF7425DB2BF80009936D /* Header */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		5029FF7425DB2BF80009936D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				50D6437325DC0C38001EA9BF /* Service */,
+				50D6437225DC0C32001EA9BF /* Interactor */,
+				5029FF9725DBFFC80009936D /* View */,
+				5029FF9125DB397B0009936D /* Domain */,
+				5029FF8C25DB35E50009936D /* Presenter */,
+				5029FF8725DB34AC0009936D /* Builder */,
+				5029FF8A25DB358E0009936D /* HomeHeaderSection.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5029FF7525DB2C0C0009936D /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		5029FF7625DB2C110009936D /* Suggestion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Suggestion;
+			sourceTree = "<group>";
+		};
+		5029FF7825DB2E620009936D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF7925DB2E670009936D /* TableView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5029FF7925DB2E670009936D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF7A25DB2E8B0009936D /* ReusableIdentifier.swift */,
+				5029FF7C25DB2EB50009936D /* Section.swift */,
+				5029FF7E25DB2ECD0009936D /* SectionInput.swift */,
+				5029FF8125DB2EEC0009936D /* SectionOutput.swift */,
+				5029FF8325DB2F0C0009936D /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		5029FF8725DB34AC0009936D /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF8825DB357A0009936D /* HomeHeaderSectionBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		5029FF8C25DB35E50009936D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF8D25DB36110009936D /* HomeHeaderSectionPresenterInput.swift */,
+				5029FF8F25DB374E0009936D /* HomeHeaderSectionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5029FF9125DB397B0009936D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF9225DB49A60009936D /* HomeHeaderSectionDomain.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5029FF9425DBFD5E0009936D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF9525DBFD740009936D /* UIImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5029FF9725DBFFC80009936D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF9825DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift */,
+				5029FF9925DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50D6437225DC0C32001EA9BF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				50D6437C25DC0DAE001EA9BF /* HomeHeaderSectionInteractorInput.swift */,
+				50D6437E25DC0DF7001EA9BF /* HomeSectionHeaderInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		50D6437325DC0C38001EA9BF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */,
+				50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		50D6437825DC0D0A001EA9BF /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				5029FF8525DB2F710009936D /* Thread.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		50D6437925DC0D18001EA9BF /* BaseRequest */ = {
+			isa = PBXGroup;
+			children = (
+				50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */,
+			);
+			path = BaseRequest;
 			sourceTree = "<group>";
 		};
 		DCC2E6DA54B04BAFE2B04461 /* Pods */ = {
@@ -300,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5029FF3725DAFF590009936D /* LaunchScreen.storyboard in Resources */,
+				5029FF9B25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib in Resources */,
 				5029FF3425DAFF590009936D /* Assets.xcassets in Resources */,
 				5029FF3225DAFF560009936D /* Main.storyboard in Resources */,
 			);
@@ -354,21 +532,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5029FF2F25DAFF560009936D /* ViewController.swift in Sources */,
+				5029FF7D25DB2EB50009936D /* Section.swift in Sources */,
+				5029FF9625DBFD740009936D /* UIImageView.swift in Sources */,
+				5029FF2F25DAFF560009936D /* HomeViewController.swift in Sources */,
 				5029FF6E25DB1A550009936D /* TipsEntity.swift in Sources */,
+				50D6437F25DC0DF7001EA9BF /* HomeSectionHeaderInteractor.swift in Sources */,
+				50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */,
+				5029FF8425DB2F0C0009936D /* TableViewController.swift in Sources */,
 				5029FF6A25DB182A0009936D /* HomeInteractor.swift in Sources */,
 				5029FF5325DB08220009936D /* InteractorInput.swift in Sources */,
+				5029FF8225DB2EEC0009936D /* SectionOutput.swift in Sources */,
 				5029FF6625DB14190009936D /* Constant.swift in Sources */,
 				5029FF6C25DB18F90009936D /* KeyEntity.swift in Sources */,
 				5029FF2B25DAFF560009936D /* AppDelegate.swift in Sources */,
 				5029FF7225DB1CCC0009936D /* SuggestionEntity.swift in Sources */,
 				5029FF6825DB15C10009936D /* HomeService.swift in Sources */,
+				5029FF9A25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift in Sources */,
+				5029FF7B25DB2E8B0009936D /* ReusableIdentifier.swift in Sources */,
+				5029FF8925DB357B0009936D /* HomeHeaderSectionBuilder.swift in Sources */,
+				5029FF8B25DB358E0009936D /* HomeHeaderSection.swift in Sources */,
+				5029FF9325DB49A60009936D /* HomeHeaderSectionDomain.swift in Sources */,
 				5029FF4D25DB06850009936D /* UserDefaultsHelper.swift in Sources */,
 				5029FF5125DB07E50009936D /* HomeServiceInput.swift in Sources */,
+				5029FF9025DB374E0009936D /* HomeHeaderSectionPresenter.swift in Sources */,
 				5029FF2D25DAFF560009936D /* SceneDelegate.swift in Sources */,
+				5029FF7F25DB2ECD0009936D /* SectionInput.swift in Sources */,
 				5029FF4F25DB06A80009936D /* UserDefaultsKey.swift in Sources */,
 				5029FF7025DB1B450009936D /* ProfileEntity.swift in Sources */,
+				5029FF8625DB2F710009936D /* Thread.swift in Sources */,
+				50D6437525DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift in Sources */,
 				5029FF5525DB082F0009936D /* PresenterInput.swift in Sources */,
+				5029FF8E25DB36110009936D /* HomeHeaderSectionPresenterInput.swift in Sources */,
+				50D6437D25DC0DAE001EA9BF /* HomeHeaderSectionInteractorInput.swift in Sources */,
+				50D6437725DC0CC7001EA9BF /* HomeHeaderSectionService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,7 @@ class HomeInteractor: HomeInteractorInput {
             do {
                 let keys = try JSONDecoder().decode(KeyEntity.self, from: data)
                 self.saveKeys(keys: keys)
-                self.output?.handleFeedSuccess()
+                self.output?.handleSuccess()
             } catch {
                 print("error scene")
             }
@@ -38,7 +38,7 @@ class HomeInteractor: HomeInteractorInput {
             do {
                 let tips = try JSONDecoder().decode(Tips.self, from: data)
                 
-                self.output?.handleFeedSuccess()
+                self.output?.handleSuccess()
             } catch {
                 print("error scene")
             }
@@ -53,7 +53,7 @@ class HomeInteractor: HomeInteractorInput {
                 if let token = profile.token {
                 UserDefaultsHelper.setValueStringForKey(value: token, key: .token)
                 }
-                self.output?.handleFeedSuccess()
+                self.output?.handleProfileSuccess(profile: profile)
             } catch {
                 print("error scene")
             }
@@ -67,7 +67,7 @@ class HomeInteractor: HomeInteractorInput {
             do {
                 let sug = try JSONDecoder().decode(Suggestions.self, from: data)
                 
-                self.output?.handleFeedSuccess()
+                self.output?.handleSuccess()
             } catch {
                 print("error scene")
             }
