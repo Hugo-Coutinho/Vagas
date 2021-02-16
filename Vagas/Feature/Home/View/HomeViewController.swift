@@ -18,13 +18,22 @@ class HomeViewController: TableViewController {
 //        interactor.getProfile()
 //        interactor.getSuggestion()
 //        interactor.getTips()
-        self.sections = [HomeHeaderSectionBuilder().make(output: self)]
+        self.sections = [
+            HomeHeaderSectionBuilder().make(output: self),
+            HomeSuggestionSectionBuilder().make(output: self),
+        ]
         self.tableView.reloadData()
     }
 }
 
 // MARK: - HEADER SECTION OUTPUT -
 extension HomeViewController: HomeHeaderSectionOutput {
+    
+}
+
+
+// MARK: - SUGGESTION SECTION OUTPUT -
+extension HomeViewController: HomeSuggestionSectionOutput {
     
 }
 

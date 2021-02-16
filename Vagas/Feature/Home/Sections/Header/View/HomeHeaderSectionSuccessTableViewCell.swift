@@ -14,10 +14,13 @@ protocol HomeHeaderSectionSuccessDelegate {
 
 class HomeHeaderSectionSuccessTableViewCell: UITableViewCell {
     
+    // MARK: - OUTLETS -
     @IBOutlet weak var nameLabel: UILabel!
     
+    // MARK: - VARIABLES -
     var delegate: HomeHeaderSectionSuccessDelegate?
     
+    // MARK: - OVERRIDE METHODS -
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,6 +32,7 @@ class HomeHeaderSectionSuccessTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: - SETUP -
     func setup(name: String) {
         self.nameLabel.text = name
     }
