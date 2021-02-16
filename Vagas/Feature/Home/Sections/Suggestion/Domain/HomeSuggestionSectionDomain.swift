@@ -14,7 +14,14 @@ struct HomeSuggestionSectionDomain {
     init() {}
     
     init(suggestion: Suggestions) {
-        self.suggestions = suggestion.compactMap({ (current) -> SuggestionItemDomain? in
+        self.suggestions = self.mapSuggestions(suggestion: suggestion)
+    }
+}
+
+// MARK: - AUX METHODS -
+extension HomeSuggestionSectionDomain {
+    private func mapSuggestions(suggestion: Suggestions) -> [SuggestionItemDomain] {
+        return suggestion.compactMap({ (current) -> SuggestionItemDomain? in
             guard let title = current.jobAdTile,
                 let companyTitle = current.company,
                 let totalositions = current.totalPositions,
@@ -27,17 +34,16 @@ struct HomeSuggestionSectionDomain {
             return SuggestionItemDomain(title: title, companyName: companyTitle, date: date, positionDetail: positionDetail, salary: salaryMapped)
         })
     }
-}
 
-// MARK: - AUX METHODS -
-extension HomeSuggestionSectionDomain {
     private func mapSalaryText(salary: Salary) -> String {
-        guard let real = salary.real else { return self.mapSalaryRange(salary: salary) }
+        guard let real = salary.real,
+            !real.isEmpty else { return self.mapSalaryRange(salary: salary) }
         return real
     }
     
     private func mapSalaryRange(salary: Salary) -> String {
-        guard let range = salary.range else { return "" }
+        guard let range = salary.range,
+            !range.isEmpty else { return "" }
         return range
     }
     

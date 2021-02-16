@@ -39,6 +39,9 @@
 		5029FF9625DBFD740009936D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF9525DBFD740009936D /* UIImageView.swift */; };
 		5029FF9A25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029FF9825DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift */; };
 		5029FF9B25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5029FF9925DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib */; };
+		5087C9FA25DC42DF007141F1 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C9F925DC42DF007141F1 /* UITableView.swift */; };
+		5087C9FC25DC42F4007141F1 /* ReusableCellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C9FB25DC42F4007141F1 /* ReusableCellIdentifiable.swift */; };
+		5087C9FE25DC43AF007141F1 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C9FD25DC43AF007141F1 /* UICollectionView.swift */; };
 		50D6437525DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */; };
 		50D6437725DC0CC7001EA9BF /* HomeHeaderSectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */; };
 		50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */; };
@@ -55,6 +58,8 @@
 		50D6439925DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D6439725DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib */; };
 		50D6439B25DC1886001EA9BF /* HomeSuggestionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6439A25DC1886001EA9BF /* HomeSuggestionSection.swift */; };
 		50D6439D25DC19E8001EA9BF /* HomeSuggestionSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6439C25DC19E8001EA9BF /* HomeSuggestionSectionBuilder.swift */; };
+		50D643A225DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D643A025DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift */; };
+		50D643A325DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D643A125DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib */; };
 		8F91022A38992A301365C4F4 /* Pods_Vagas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4476B0C134C2E842FA8C5125 /* Pods_Vagas.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +99,9 @@
 		5029FF9525DBFD740009936D /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		5029FF9825DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionSuccessTableViewCell.swift; sourceTree = "<group>"; };
 		5029FF9925DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderSectionSuccessTableViewCell.xib; sourceTree = "<group>"; };
+		5087C9F925DC42DF007141F1 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		5087C9FB25DC42F4007141F1 /* ReusableCellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellIdentifiable.swift; sourceTree = "<group>"; };
+		5087C9FD25DC43AF007141F1 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionServiceInput.swift; sourceTree = "<group>"; };
 		50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionService.swift; sourceTree = "<group>"; };
 		50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
@@ -110,6 +118,8 @@
 		50D6439725DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSuggestionSectionSuccessTableViewCell.xib; sourceTree = "<group>"; };
 		50D6439A25DC1886001EA9BF /* HomeSuggestionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestionSection.swift; sourceTree = "<group>"; };
 		50D6439C25DC19E8001EA9BF /* HomeSuggestionSectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestionSectionBuilder.swift; sourceTree = "<group>"; };
+		50D643A025DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestionSectionSuccessCollectionViewCell.swift; sourceTree = "<group>"; };
+		50D643A125DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSuggestionSectionSuccessCollectionViewCell.xib; sourceTree = "<group>"; };
 		633372022F9CCB348E34CC70 /* Pods-Vagas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.release.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.release.xcconfig"; sourceTree = "<group>"; };
 		8666AC6739453F6E17106E44 /* Pods-Vagas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.debug.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -381,6 +391,9 @@
 			isa = PBXGroup;
 			children = (
 				5029FF9525DBFD740009936D /* UIImageView.swift */,
+				5087C9F925DC42DF007141F1 /* UITableView.swift */,
+				5087C9FB25DC42F4007141F1 /* ReusableCellIdentifiable.swift */,
+				5087C9FD25DC43AF007141F1 /* UICollectionView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -465,8 +478,8 @@
 		50D6438425DC1302001EA9BF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				50D6439625DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.swift */,
-				50D6439725DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib */,
+				50D6439F25DC35D4001EA9BF /* CollectionViewCell */,
+				50D6439E25DC35C2001EA9BF /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +507,24 @@
 				50D6439C25DC19E8001EA9BF /* HomeSuggestionSectionBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		50D6439E25DC35C2001EA9BF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				50D6439625DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.swift */,
+				50D6439725DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		50D6439F25DC35D4001EA9BF /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				50D643A025DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift */,
+				50D643A125DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		DCC2E6DA54B04BAFE2B04461 /* Pods */ = {
@@ -578,6 +609,7 @@
 				50D6439925DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib in Resources */,
 				5029FF3425DAFF590009936D /* Assets.xcassets in Resources */,
 				5029FF3225DAFF560009936D /* Main.storyboard in Resources */,
+				50D643A325DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,14 +667,17 @@
 				5029FF2F25DAFF560009936D /* HomeViewController.swift in Sources */,
 				5029FF6E25DB1A550009936D /* TipsEntity.swift in Sources */,
 				50D6437F25DC0DF7001EA9BF /* HomeSectionHeaderInteractor.swift in Sources */,
+				5087C9FE25DC43AF007141F1 /* UICollectionView.swift in Sources */,
 				50D6439525DC16DF001EA9BF /* HomeSuggestionSectionPresenter.swift in Sources */,
 				50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */,
 				5029FF8425DB2F0C0009936D /* TableViewController.swift in Sources */,
 				50D6438925DC1353001EA9BF /* HomeSuggestionSectionServiceInput.swift in Sources */,
+				50D643A225DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift in Sources */,
 				5029FF6A25DB182A0009936D /* HomeInteractor.swift in Sources */,
 				5029FF5325DB08220009936D /* InteractorInput.swift in Sources */,
 				5029FF8225DB2EEC0009936D /* SectionOutput.swift in Sources */,
 				5029FF6625DB14190009936D /* Constant.swift in Sources */,
+				5087C9FC25DC42F4007141F1 /* ReusableCellIdentifiable.swift in Sources */,
 				50D6439325DC15A5001EA9BF /* HomeSuggestionSectionDomain.swift in Sources */,
 				50D6438F25DC148A001EA9BF /* HomeSuggestionSectionInteractor.swift in Sources */,
 				5029FF6C25DB18F90009936D /* KeyEntity.swift in Sources */,
@@ -661,6 +696,7 @@
 				5029FF5125DB07E50009936D /* HomeServiceInput.swift in Sources */,
 				5029FF9025DB374E0009936D /* HomeHeaderSectionPresenter.swift in Sources */,
 				5029FF2D25DAFF560009936D /* SceneDelegate.swift in Sources */,
+				5087C9FA25DC42DF007141F1 /* UITableView.swift in Sources */,
 				50D6438D25DC144D001EA9BF /* HomeSuggestionSectionInteractorInput.swift in Sources */,
 				5029FF7F25DB2ECD0009936D /* SectionInput.swift in Sources */,
 				5029FF4F25DB06A80009936D /* UserDefaultsKey.swift in Sources */,

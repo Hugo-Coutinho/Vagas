@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeSuggestionSectionSuccessCollectionViewCell" reuseIdentifier="HomeSuggestionSectionSuccessCollectionViewCell" id="gTV-IL-0wX" customClass="HomeSuggestionSectionSuccessCollectionViewCell" customModule="Vagas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EK7-Z2-Xda">
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="174"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assistente telemar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NTa-7W-LKK">
+                                <rect key="frame" x="8" y="8" width="194" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GNx-2o-p6I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.028744972850000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="S4W-6p-XVi">
+                                <rect key="frame" x="218" y="8" width="62" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="PIM-RE-oWe"/>
+                                    <constraint firstAttribute="height" constant="21" id="Vf6-AL-coU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="empresa" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-lk-acE">
+                                <rect key="frame" x="8" y="37" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cz7-1Q-PsD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.028744972850000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vagas" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="9EA-yg-rw5">
+                                <rect key="frame" x="8" y="66" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="54F-Ra-Ho2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.028744972850000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="salário" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="3N7-AL-Pa3">
+                                <rect key="frame" x="8" y="95" width="239" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ktY-hM-BML"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.028744972850000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EEU-PT-NJQ">
+                                <rect key="frame" x="255" y="94.5" width="25" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="21H-IJ-ovC"/>
+                                    <constraint firstAttribute="height" constant="25" id="TJ6-1M-1as"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a1-ka-yy7">
+                                <rect key="frame" x="8" y="136" width="272" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.028744972850000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pj1-Qm-Ezu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                <state key="normal" title="Enviar Currículo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EEU-PT-NJQ" firstAttribute="leading" secondItem="3N7-AL-Pa3" secondAttribute="trailing" constant="8" id="96a-oW-f5f"/>
+                            <constraint firstItem="NTa-7W-LKK" firstAttribute="top" secondItem="EK7-Z2-Xda" secondAttribute="top" constant="8" id="Cfz-Zx-ooN"/>
+                            <constraint firstItem="pSs-lk-acE" firstAttribute="top" secondItem="NTa-7W-LKK" secondAttribute="bottom" constant="8" id="EHg-MV-Kez"/>
+                            <constraint firstAttribute="trailing" secondItem="S4W-6p-XVi" secondAttribute="trailing" constant="8" id="F1N-bB-jYF"/>
+                            <constraint firstItem="S4W-6p-XVi" firstAttribute="top" secondItem="EK7-Z2-Xda" secondAttribute="top" constant="8" id="IDd-V3-vXH"/>
+                            <constraint firstAttribute="trailing" secondItem="pSs-lk-acE" secondAttribute="trailing" id="NJL-la-lbo"/>
+                            <constraint firstItem="3N7-AL-Pa3" firstAttribute="top" secondItem="9EA-yg-rw5" secondAttribute="bottom" constant="8" id="NmQ-AP-oZ3"/>
+                            <constraint firstItem="NTa-7W-LKK" firstAttribute="leading" secondItem="EK7-Z2-Xda" secondAttribute="leading" constant="8" id="Ric-Il-sNX"/>
+                            <constraint firstItem="pSs-lk-acE" firstAttribute="leading" secondItem="EK7-Z2-Xda" secondAttribute="leading" constant="8" id="STa-nc-8Ab"/>
+                            <constraint firstItem="S4W-6p-XVi" firstAttribute="leading" secondItem="NTa-7W-LKK" secondAttribute="trailing" constant="16" id="TOq-Xh-Kdh"/>
+                            <constraint firstAttribute="bottom" secondItem="1a1-ka-yy7" secondAttribute="bottom" constant="8" id="VrS-cD-6Y5"/>
+                            <constraint firstItem="9EA-yg-rw5" firstAttribute="top" secondItem="pSs-lk-acE" secondAttribute="bottom" constant="8" id="cch-IY-MFm"/>
+                            <constraint firstItem="EEU-PT-NJQ" firstAttribute="centerY" secondItem="3N7-AL-Pa3" secondAttribute="centerY" id="eaj-N8-cLy"/>
+                            <constraint firstItem="9EA-yg-rw5" firstAttribute="leading" secondItem="EK7-Z2-Xda" secondAttribute="leading" constant="8" id="hf1-rr-5NY"/>
+                            <constraint firstItem="3N7-AL-Pa3" firstAttribute="leading" secondItem="EK7-Z2-Xda" secondAttribute="leading" constant="8" id="ozD-aI-hAQ"/>
+                            <constraint firstAttribute="trailing" secondItem="EEU-PT-NJQ" secondAttribute="trailing" constant="8" id="wJn-Q3-O9t"/>
+                            <constraint firstAttribute="trailing" secondItem="9EA-yg-rw5" secondAttribute="trailing" id="x0C-qZ-O2p"/>
+                            <constraint firstItem="1a1-ka-yy7" firstAttribute="leading" secondItem="EK7-Z2-Xda" secondAttribute="leading" constant="8" id="y1L-zx-NUI"/>
+                            <constraint firstAttribute="trailing" secondItem="1a1-ka-yy7" secondAttribute="trailing" constant="8" id="zwx-CU-j39"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="EK7-Z2-Xda" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2aP-Ay-6hS"/>
+                <constraint firstAttribute="bottom" secondItem="EK7-Z2-Xda" secondAttribute="bottom" id="HUq-Sj-s3L"/>
+                <constraint firstAttribute="trailing" secondItem="EK7-Z2-Xda" secondAttribute="trailing" id="Mi9-T0-fdz"/>
+                <constraint firstItem="EK7-Z2-Xda" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UWI-O3-a7a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="82" height="115"/>
+            <connections>
+                <outlet property="companyNameLabel" destination="pSs-lk-acE" id="JlI-Wq-Rkq"/>
+                <outlet property="dateLabel" destination="S4W-6p-XVi" id="WI7-3g-iA9"/>
+                <outlet property="positionDetailLabel" destination="9EA-yg-rw5" id="Vhd-Db-CjZ"/>
+                <outlet property="salaryLabel" destination="3N7-AL-Pa3" id="UiC-Dw-pLG"/>
+                <outlet property="titleLabel" destination="NTa-7W-LKK" id="u0f-E3-YhY"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="101.78571428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="eye" catalog="system" width="128" height="81"/>
+    </resources>
+</document>
