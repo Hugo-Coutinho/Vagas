@@ -16,6 +16,7 @@ class HomeHeaderSectionSuccessTableViewCell: UITableViewCell {
     
     // MARK: - OUTLETS -
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var imageProfile: UIImageView!
     
     // MARK: - VARIABLES -
     var delegate: HomeHeaderSectionSuccessDelegate?
@@ -33,7 +34,9 @@ class HomeHeaderSectionSuccessTableViewCell: UITableViewCell {
     }
     
     // MARK: - SETUP -
-    func setup(name: String) {
-        self.nameLabel.text = name
+    func setup(domain: HomeHeaderSectionDomain) {
+        self.nameLabel.text = domain.name
+        self.imageProfile.image = UIImage(named: Constant.ImageName.user)
+        self.imageProfile.setRounded()
     }
 }

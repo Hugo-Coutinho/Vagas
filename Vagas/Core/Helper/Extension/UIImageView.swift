@@ -14,6 +14,13 @@ extension UIImageView {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
     }
+    
+    func setRounded() {
+           self.layer.cornerRadius = (self.frame.width / 2)
+           self.layer.masksToBounds = true
+           self.layer.borderColor = UIColor.white.cgColor
+           self.layer.borderWidth = 1
+       }
 }
 
 // MARK: - AUX METHODS -

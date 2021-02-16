@@ -10,13 +10,11 @@ import Foundation
 import UIKit
 
 struct HomeHeaderSectionDomain {
-    var profileImage: UIImageView = UIImageView()
     var name: String = ""
     
     init() {}
     
     init(profile: ProfileEntity) {
         self.name = profile.name ?? ""
-        self.profileImage.downloaded(from: profile.photo ?? "")
     }
 }

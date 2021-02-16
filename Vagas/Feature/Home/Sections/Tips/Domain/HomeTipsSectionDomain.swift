@@ -32,7 +32,7 @@ extension HomeTipsSectionDomain {
     }
 }
 
-// MARK: - SUGGESTION ITEM -
+// MARK: - TIPS ITEM -
 struct TipsItemDomain {
     let description, buttonTitle, url: String
     let isShowButton: Bool

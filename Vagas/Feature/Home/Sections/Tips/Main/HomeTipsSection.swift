@@ -49,14 +49,15 @@ extension HomeTipsSection: TableSectionCellInput {
     
     func willDisplayCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
         guard let cell = cell as? HomeTipsSectionSuccessTableViewCell,
-            self.tips.tips.count > 0 else { return }
+            self.tips.tips.count > 0,
+        let firstTip = self.tips.tips.first else { return }
         cell.delegate = self
-        cell.setup(tips: self.tips)
+        cell.setup(tips: firstTip)
         
     }
     
     func heightForRowInSection(indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return CGFloat(400)
     }
 }
 

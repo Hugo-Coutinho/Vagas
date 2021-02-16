@@ -27,8 +27,8 @@ class HomeViewController: TableViewController {
 // MARK: - HEADER SECTION OUTPUT -
 extension HomeViewController: HomePresenterOutput {
     func handleSuccess(profile: HomeHeaderSectionDomain) {
-     self.sections = [
-        HomeHeaderSectionBuilder().make(profile: profile, output: self),
+        self.sections = [
+            HomeHeaderSectionBuilder().make(profile: profile, output: self),
             HomeSuggestionSectionBuilder().make(output: self),
             HomeTipsSectionBuilder().make(output: self),
         ]

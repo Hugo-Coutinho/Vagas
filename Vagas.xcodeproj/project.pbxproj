@@ -73,6 +73,8 @@
 		50D6439D25DC19E8001EA9BF /* HomeSuggestionSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6439C25DC19E8001EA9BF /* HomeSuggestionSectionBuilder.swift */; };
 		50D643A225DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D643A025DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift */; };
 		50D643A325DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D643A125DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib */; };
+		50FC2B5C25DC833700C0FE08 /* UIIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC2B5B25DC833700C0FE08 /* UIIview.swift */; };
+		50FC2B5E25DC89F100C0FE08 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC2B5D25DC89F100C0FE08 /* UIButton.swift */; };
 		8F91022A38992A301365C4F4 /* Pods_Vagas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4476B0C134C2E842FA8C5125 /* Pods_Vagas.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +148,8 @@
 		50D6439C25DC19E8001EA9BF /* HomeSuggestionSectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestionSectionBuilder.swift; sourceTree = "<group>"; };
 		50D643A025DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestionSectionSuccessCollectionViewCell.swift; sourceTree = "<group>"; };
 		50D643A125DC3615001EA9BF /* HomeSuggestionSectionSuccessCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSuggestionSectionSuccessCollectionViewCell.xib; sourceTree = "<group>"; };
+		50FC2B5B25DC833700C0FE08 /* UIIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIview.swift; sourceTree = "<group>"; };
+		50FC2B5D25DC89F100C0FE08 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		633372022F9CCB348E34CC70 /* Pods-Vagas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.release.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.release.xcconfig"; sourceTree = "<group>"; };
 		8666AC6739453F6E17106E44 /* Pods-Vagas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagas.debug.xcconfig"; path = "Target Support Files/Pods-Vagas/Pods-Vagas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -429,6 +433,8 @@
 				5087C9F925DC42DF007141F1 /* UITableView.swift */,
 				5087C9FB25DC42F4007141F1 /* ReusableCellIdentifiable.swift */,
 				5087C9FD25DC43AF007141F1 /* UICollectionView.swift */,
+				50FC2B5B25DC833700C0FE08 /* UIIview.swift */,
+				50FC2B5D25DC89F100C0FE08 /* UIButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -494,8 +500,8 @@
 		5087CA0625DC56C2007141F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5087CA1A25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.swift */,
-				5087CA1B25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.xib */,
+				5087CA2925DC7305007141F1 /* CollectionViewCell */,
+				5087CA2825DC72D8007141F1 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +530,22 @@
 				5087CA1825DC5C4F007141F1 /* HomeTipsSection.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		5087CA2825DC72D8007141F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5087CA1A25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.swift */,
+				5087CA1B25DC5CF4007141F1 /* HomeTipsSectionSuccessTableViewCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5087CA2925DC7305007141F1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		50D6437225DC0C32001EA9BF /* Interactor */ = {
@@ -792,6 +814,7 @@
 				5087CA2325DC6184007141F1 /* HomePresenter.swift in Sources */,
 				5087C9FE25DC43AF007141F1 /* UICollectionView.swift in Sources */,
 				50D6439525DC16DF001EA9BF /* HomeSuggestionSectionPresenter.swift in Sources */,
+				50FC2B5C25DC833700C0FE08 /* UIIview.swift in Sources */,
 				50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */,
 				5029FF8425DB2F0C0009936D /* TableViewController.swift in Sources */,
 				50D6438925DC1353001EA9BF /* HomeSuggestionSectionServiceInput.swift in Sources */,
@@ -812,6 +835,7 @@
 				5029FF6825DB15C10009936D /* HomeService.swift in Sources */,
 				5029FF9A25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.swift in Sources */,
 				50D6439125DC155D001EA9BF /* HomeSuggestionSectionPresenterInput.swift in Sources */,
+				50FC2B5E25DC89F100C0FE08 /* UIButton.swift in Sources */,
 				5087CA0D25DC5773007141F1 /* HomeTipsSectionService.swift in Sources */,
 				5029FF7B25DB2E8B0009936D /* ReusableIdentifier.swift in Sources */,
 				5029FF8925DB357B0009936D /* HomeHeaderSectionBuilder.swift in Sources */,

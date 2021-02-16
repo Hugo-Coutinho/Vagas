@@ -50,7 +50,7 @@ extension HomeHeaderSection: TableSectionCellInput {
     func willDisplayCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
         if let cell = cell as? HomeHeaderSectionSuccessTableViewCell {
             cell.delegate = self
-            cell.setup(name: self.profile.name)
+            cell.setup(domain: self.profile)
         }
     }
     
