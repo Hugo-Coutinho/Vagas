@@ -14,20 +14,11 @@ final class HomeHeaderSectionBuilder {
     // MARK: - CONSTRUCTOR -
     init(){}
     
-    // MARK: - PRESENTER BUILDER -
-    func makePresenter(headerSection: HomeHeaderSection) -> HomeHeaderSectionPresenter {
-        let service: HomeHeaderServiceInput = HomeHeaderService()
-        let interactor: HomeHeaderInteractorInput = HomeHeaderInteractor(service: service)
-        let presenter = HomeHeaderSectionPresenter(input: interactor, output: headerSection)
-        interactor.output = presenter
-        return presenter
-    }
-    
-    func make(output: HomeHeaderSectionOutput) -> HomeHeaderSection {
+    // MARK: - BUILDER -
+    func make(profile: HomeHeaderSectionDomain, output: HomeHeaderSectionOutput) -> HomeHeaderSection {
         let section = HomeHeaderSection()
-        let presenter = self.makePresenter(headerSection: section)
-        section.presenter = presenter
         section.output = output
+        section.profile = profile
         section.startSection()
         return section
     }

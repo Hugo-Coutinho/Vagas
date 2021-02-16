@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// MARK: - VIEW CONTROLLER DELEGATE -
 protocol HomeHeaderSectionOutput: SectionOutput {
     
 }
@@ -16,8 +17,7 @@ protocol HomeHeaderSectionOutput: SectionOutput {
 final class HomeHeaderSection: Section {
     
     // MARK: - VARIABLES -
-    var presenter: HomeHeaderSectionPresenterInput?
-    private var profile: HomeHeaderSectionDomain!
+    var profile: HomeHeaderSectionDomain!
     
     // MARK: - CONSTRUCTORS -
     override init() {
@@ -28,7 +28,8 @@ final class HomeHeaderSection: Section {
     
     // MARK: - INPUT METHODS -
     func startSection() {
-        presenter?.getProfile()
+        self.scene = .sceneSuccess
+        self.output?.reloadSection(section: self, animation: .automatic)
     }
 }
 
@@ -55,19 +56,6 @@ extension HomeHeaderSection: TableSectionCellInput {
     
     func heightForRowInSection(indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
-    }
-}
-
-// MARK: - PRESENTER OUTPUT -
-extension HomeHeaderSection : HomeHeaderSectionPresenterOutput {
-    func handleSuccess(profile: HomeHeaderSectionDomain) {
-        self.scene = .sceneSuccess
-        self.profile = profile
-        self.output?.reloadSection(section: self, animation: .automatic)
-    }
-    
-    func removeSection() {
-        self.output?.removeItem(from: 0, in: self, animation: .fade, completion: nil)
     }
 }
 

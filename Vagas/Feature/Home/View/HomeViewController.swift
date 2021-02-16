@@ -20,15 +20,15 @@ class HomeViewController: TableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.presenter.getKeys()
+        self.presenter.getStarted()
     }
 }
 
 // MARK: - HEADER SECTION OUTPUT -
 extension HomeViewController: HomePresenterOutput {
-    func handleSuccess() {
-        self.sections = [
-            HomeHeaderSectionBuilder().make(output: self),
+    func handleSuccess(profile: HomeHeaderSectionDomain) {
+     self.sections = [
+        HomeHeaderSectionBuilder().make(profile: profile, output: self),
             HomeSuggestionSectionBuilder().make(output: self),
             HomeTipsSectionBuilder().make(output: self),
         ]

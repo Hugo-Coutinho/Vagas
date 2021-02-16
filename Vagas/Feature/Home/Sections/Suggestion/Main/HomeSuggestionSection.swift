@@ -42,21 +42,15 @@ extension HomeSuggestionSection: TableSectionCellInput {
         case .sceneSuccess:
             return HomeSuggestionSectionSuccessTableViewCell.self
         default:
-            return LoadingTableViewCell.self
+            return HomeSuggestionSectionSuccessTableViewCell.self
         }
     }
     
     func willDisplayCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
-        switch self.scene {
-        case .sceneSuccess:
-            
-            guard let cell = cell as? HomeSuggestionSectionSuccessTableViewCell else { return }
-            cell.delegate = self
-            cell.setup(suggestion: self.suggestion)
-            
-        default:
-            break;
-        }
+        guard let cell = cell as? HomeSuggestionSectionSuccessTableViewCell,
+            self.suggestion.suggestions.count > 0 else { return }
+        cell.delegate = self
+        cell.setup(suggestion: self.suggestion)
     }
     
     func heightForRowInSection(indexPath: IndexPath) -> CGFloat {

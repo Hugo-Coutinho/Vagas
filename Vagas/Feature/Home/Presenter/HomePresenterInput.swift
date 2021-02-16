@@ -16,13 +16,13 @@ protocol HomePresenterInput: class {
     var input: HomeInteractorInput? { get set }
     
     // MARK: - INPUT METHODS -
-    func getKeys()
+    func getStarted()
 }
 
 // MARK: - PRESENTER OUTPUT PROTOCOL -
 protocol HomePresenterOutput: class {
     
     // MARK: - OUTPUT METHODS -
-    func handleSuccess()
+    func handleSuccess(profile: HomeHeaderSectionDomain)
 }
 

@@ -16,12 +16,12 @@ protocol HomeInteractorInput: class {
     var service: HomeServiceInput { get set }
     
     // MARK: - INPUT METHODS -
-    func getKeys()
+    func getStarted()
 }
 
 // MARK: - INTERACTOR OUTPUT PROTOCOL -
 protocol HomeInteractorOutput: class {
     
     // MARK: - OUTPUT METHODS -
-    func handleSuccess()
+    func handleSuccess(profile: ProfileEntity)
 }

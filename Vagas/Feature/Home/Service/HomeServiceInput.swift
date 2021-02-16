@@ -13,4 +13,5 @@ protocol HomeServiceInput: class {
     
     // MARK: - INPUT METHODS -
     func getKeys(completionHandler: @escaping (Data) -> Void)
+    func getProfile(authorization: String, completionHandler: @escaping (Data) -> Void)
 }

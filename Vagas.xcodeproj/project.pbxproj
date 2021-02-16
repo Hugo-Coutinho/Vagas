@@ -55,8 +55,6 @@
 		5087CA1F25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA1E25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift */; };
 		5087CA2125DC60D0007141F1 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA2025DC60D0007141F1 /* HomeBuilder.swift */; };
 		5087CA2325DC6184007141F1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA2225DC6184007141F1 /* HomePresenter.swift */; };
-		5087CA2625DC653D007141F1 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CA2425DC653D007141F1 /* LoadingTableViewCell.swift */; };
-		5087CA2725DC653D007141F1 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5087CA2525DC653D007141F1 /* LoadingTableViewCell.xib */; };
 		50D6437525DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */; };
 		50D6437725DC0CC7001EA9BF /* HomeHeaderSectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */; };
 		50D6437B25DC0D4D001EA9BF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */; };
@@ -130,8 +128,6 @@
 		5087CA1E25DC5EBE007141F1 /* HomeTipsSectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTipsSectionBuilder.swift; sourceTree = "<group>"; };
 		5087CA2025DC60D0007141F1 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		5087CA2225DC6184007141F1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		5087CA2425DC653D007141F1 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
-		5087CA2525DC653D007141F1 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		50D6437425DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionServiceInput.swift; sourceTree = "<group>"; };
 		50D6437625DC0CC7001EA9BF /* HomeHeaderSectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderSectionService.swift; sourceTree = "<group>"; };
 		50D6437A25DC0D4D001EA9BF /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
@@ -203,8 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				5029FF4225DB02120009936D /* Home */,
-				5087CA2425DC653D007141F1 /* LoadingTableViewCell.swift */,
-				5087CA2525DC653D007141F1 /* LoadingTableViewCell.xib */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -731,7 +725,6 @@
 			files = (
 				5029FF3725DAFF590009936D /* LaunchScreen.storyboard in Resources */,
 				5029FF9B25DBFFF90009936D /* HomeHeaderSectionSuccessTableViewCell.xib in Resources */,
-				5087CA2725DC653D007141F1 /* LoadingTableViewCell.xib in Resources */,
 				50D6439925DC17B5001EA9BF /* HomeSuggestionSectionSuccessTableViewCell.xib in Resources */,
 				5029FF3425DAFF590009936D /* Assets.xcassets in Resources */,
 				5029FF3225DAFF560009936D /* Main.storyboard in Resources */,
@@ -839,7 +832,6 @@
 				5029FF4F25DB06A80009936D /* UserDefaultsKey.swift in Sources */,
 				5029FF7025DB1B450009936D /* ProfileEntity.swift in Sources */,
 				5029FF8625DB2F710009936D /* Thread.swift in Sources */,
-				5087CA2625DC653D007141F1 /* LoadingTableViewCell.swift in Sources */,
 				50D6437525DC0C72001EA9BF /* HomeHeaderSectionServiceInput.swift in Sources */,
 				5029FF5525DB082F0009936D /* HomePresenterInput.swift in Sources */,
 				5029FF8E25DB36110009936D /* HomeHeaderSectionPresenterInput.swift in Sources */,

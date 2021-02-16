@@ -20,21 +20,40 @@ class HomeInteractor: HomeInteractorInput {
     }
     
     // MARK: - INPUT METHODS -
-    func getKeys() {
-        self.service.getKeys() { (data) in
-            do {
-                let keys = try JSONDecoder().decode(KeyEntity.self, from: data)
-                self.saveKeys(keys: keys)
-                self.output?.handleSuccess()
-            } catch {
-                print("error scene")
-            }
-        }
+    func getStarted() {
+        self.getKeys()
     }
 }
 
 // MARK: - AUX METHODS -
 extension HomeInteractor {
+    private func getKeys() {
+        self.service.getKeys() { (data) in
+            do {
+                let keys = try JSONDecoder().decode(KeyEntity.self, from: data)
+                self.saveKeys(keys: keys)
+                guard let auth = keys.auth else { return }
+                self.fetchProfile(auth: auth)
+            } catch {
+                print("error scene")
+            }
+        }
+    }
+    
+    private func fetchProfile(auth: String) {
+        self.service.getProfile(authorization: auth) { (data) in
+            do {
+                let profile = try JSONDecoder().decode(ProfileEntity.self, from: data)
+                if let token = profile.token {
+                UserDefaultsHelper.setValueStringForKey(value: token, key: .token)
+                }
+                self.output?.handleSuccess(profile: profile)
+            } catch {
+                print("error scene")
+            }
+        }
+    }
+    
     private func saveKeys(keys: KeyEntity) {
         guard let auth = keys.auth,
             let suggestion = keys.suggestion,

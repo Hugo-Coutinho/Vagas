@@ -21,15 +21,14 @@ class HomePresenter: HomePresenterInput {
     }
     
     // MARK: - INPUT -
-    func getKeys() {
-        guard let _: String = UserDefaultsHelper.getValueForKey(.auth) else { self.input?.getKeys(); return }
-        self.output?.handleSuccess()
+    func getStarted() {
+        self.input?.getStarted()
     }
 }
 
 // MARK: - INTERACTOR OUTPUT -
 extension HomePresenter: HomeInteractorOutput {
-    func handleSuccess() {
-        self.output?.handleSuccess()
+    func handleSuccess(profile: ProfileEntity) {
+        self.output?.handleSuccess(profile: HomeHeaderSectionDomain(profile: profile))
     }
 }
