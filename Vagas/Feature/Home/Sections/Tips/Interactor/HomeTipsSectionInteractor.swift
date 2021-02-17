@@ -9,7 +9,7 @@
 import Foundation
 
 class HomeTipsInteractor: HomeTipsInteractorInput {
-    
+
     // MARK: - VARIABLES -
     var output: HomeTipsInteractorOutput?
     var service: HomeTipsServiceInput
@@ -29,6 +29,14 @@ class HomeTipsInteractor: HomeTipsInteractorInput {
             } catch {
                 print("error scene")
             }
+        }
+    }
+    
+    func didTapTipPreference(action type: TipActionEnum, tipId: String) {
+        guard let tipsHeader: String = UserDefaultsHelper.getValueForKey(.survey),
+        let token: String = UserDefaultsHelper.getValueForKey(.token) else { return }
+        self.service.postTip(tipHeader: tipsHeader, token: token, tipAction: type.rawValue, tipId: tipId) { (data) in
+            print("success")
         }
     }
 }

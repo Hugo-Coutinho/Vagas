@@ -13,5 +13,6 @@ protocol HomeTipsServiceInput: class {
     
     // MARK: - INPUT METHODS -
     func getTips(tipsHeader: String, completionHandler: @escaping (Data) -> Void)
+    func postTip(tipHeader: String, token: String, tipAction: String, tipId: String, completionHandler: @escaping (Data) -> Void)
 }
 

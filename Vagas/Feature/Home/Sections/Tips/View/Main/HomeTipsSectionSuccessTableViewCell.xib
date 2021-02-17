@@ -59,37 +59,45 @@
                                     <action selector="doAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xBj-Hk-sCn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="vlo-FG-yaI">
-                                <rect key="frame" x="222" y="142.5" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="UDr-GN-iP6"/>
-                                    <constraint firstAttribute="height" constant="25" id="cOq-7y-D8c"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dislike" translatesAutoresizingMaskIntoConstraints="NO" id="Mx4-vx-KsF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oig-FW-g18">
                                 <rect key="frame" x="255" y="142.5" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="QA6-dZ-efv"/>
-                                    <constraint firstAttribute="width" constant="25" id="Xkr-xm-q07"/>
+                                    <constraint firstAttribute="height" constant="25" id="9oJ-ZJ-6V5"/>
+                                    <constraint firstAttribute="width" constant="25" id="ZxB-Q5-aWl"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" title="Button" image="dislike"/>
+                                <connections>
+                                    <action selector="didTapDislikeTip:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CsW-Vl-IfH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-fc-NiL">
+                                <rect key="frame" x="222" y="142.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="IzN-D2-hxx"/>
+                                    <constraint firstAttribute="width" constant="25" id="Z51-RG-ilz"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="like"/>
+                                <connections>
+                                    <action selector="didTapLikeTip:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3Kr-Jo-ACK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vlo-FG-yaI" firstAttribute="leading" secondItem="fhz-Bw-C1X" secondAttribute="trailing" constant="8" id="38c-a0-LN4"/>
                             <constraint firstItem="vcC-Lm-ogM" firstAttribute="leading" secondItem="OQi-aU-ELu" secondAttribute="leading" constant="8" id="6Op-4X-OHZ"/>
                             <constraint firstItem="fhz-Bw-C1X" firstAttribute="leading" secondItem="raP-bm-TVs" secondAttribute="trailing" constant="8" id="8lh-w3-usv"/>
-                            <constraint firstAttribute="trailing" secondItem="Mx4-vx-KsF" secondAttribute="trailing" constant="8" id="HLz-ac-0aK"/>
-                            <constraint firstItem="Mx4-vx-KsF" firstAttribute="leading" secondItem="vlo-FG-yaI" secondAttribute="trailing" constant="8" id="Lz4-pP-NCB"/>
-                            <constraint firstItem="Mx4-vx-KsF" firstAttribute="centerY" secondItem="vlo-FG-yaI" secondAttribute="centerY" id="RWP-6T-eU6"/>
+                            <constraint firstItem="rZZ-fc-NiL" firstAttribute="leading" secondItem="fhz-Bw-C1X" secondAttribute="trailing" constant="8" id="HlZ-oE-b0m"/>
                             <constraint firstItem="fhz-Bw-C1X" firstAttribute="centerY" secondItem="raP-bm-TVs" secondAttribute="centerY" id="Zoe-ar-nA7"/>
                             <constraint firstAttribute="height" constant="178" id="at2-ys-OOz"/>
-                            <constraint firstItem="vlo-FG-yaI" firstAttribute="centerY" secondItem="raP-bm-TVs" secondAttribute="centerY" id="bwi-9G-2N5"/>
+                            <constraint firstAttribute="trailing" secondItem="Oig-FW-g18" secondAttribute="trailing" constant="8" id="d2u-gj-aT9"/>
+                            <constraint firstItem="Oig-FW-g18" firstAttribute="leading" secondItem="rZZ-fc-NiL" secondAttribute="trailing" constant="8" id="dKS-wP-3PU"/>
+                            <constraint firstItem="rZZ-fc-NiL" firstAttribute="centerY" secondItem="raP-bm-TVs" secondAttribute="centerY" id="eSz-w2-M1a"/>
                             <constraint firstItem="raP-bm-TVs" firstAttribute="top" secondItem="vcC-Lm-ogM" secondAttribute="bottom" constant="18" id="emO-OR-uFh"/>
                             <constraint firstItem="raP-bm-TVs" firstAttribute="leading" secondItem="OQi-aU-ELu" secondAttribute="leading" constant="8" id="fIL-nm-wfX"/>
                             <constraint firstAttribute="trailing" secondItem="vcC-Lm-ogM" secondAttribute="trailing" constant="8" id="fd6-US-5vi"/>
                             <constraint firstItem="vcC-Lm-ogM" firstAttribute="top" secondItem="OQi-aU-ELu" secondAttribute="top" constant="8" id="tgo-vW-QXC"/>
                             <constraint firstAttribute="bottom" secondItem="raP-bm-TVs" secondAttribute="bottom" constant="8" id="uGm-EG-5zE"/>
+                            <constraint firstItem="Oig-FW-g18" firstAttribute="centerY" secondItem="raP-bm-TVs" secondAttribute="centerY" id="xfN-tX-M07"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -112,8 +120,6 @@
             <connections>
                 <outlet property="button" destination="raP-bm-TVs" id="W9c-iH-LM9"/>
                 <outlet property="descriptionLabel" destination="vcC-Lm-ogM" id="zKb-ss-Bw0"/>
-                <outlet property="dislikeImageView" destination="Mx4-vx-KsF" id="yp6-cp-TrV"/>
-                <outlet property="likeImageView" destination="vlo-FG-yaI" id="fsc-2Y-gb8"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
         </tableViewCell>

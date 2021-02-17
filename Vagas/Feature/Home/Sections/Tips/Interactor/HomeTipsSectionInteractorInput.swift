@@ -17,6 +17,7 @@ protocol HomeTipsInteractorInput: class {
     
     // MARK: - INPUT METHODS -
     func getTips()
+    func didTapTipPreference(action: TipActionEnum, tipId: String)
 }
 
 // MARK: - INTERACTOR OUTPUT PROTOCOL -

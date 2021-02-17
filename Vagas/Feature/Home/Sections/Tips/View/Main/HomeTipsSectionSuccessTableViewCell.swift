@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - DELEGATE -
 protocol HomeTipsSectionSuccessDelegate {
-    
+    func didTapTipPreference(type: TipActionEnum)
 }
 
 class HomeTipsSectionSuccessTableViewCell: UITableViewCell {
@@ -35,6 +35,15 @@ class HomeTipsSectionSuccessTableViewCell: UITableViewCell {
     @IBAction func doAction(_ sender: Any) {
             guard let url = URL(string: self.urlString) else { return }
             UIApplication.shared.open(url)
+    }
+    
+    
+    @IBAction func didTapLikeTip(_ sender: Any) {
+        self.delegate?.didTapTipPreference(type: .like)
+    }
+    
+    @IBAction func didTapDislikeTip(_ sender: Any) {
+        self.delegate?.didTapTipPreference(type: .disLike)
     }
     
     

@@ -78,6 +78,8 @@ extension HomeTipsSection : HomeTipsSectionPresenterOutput {
 
 // MARK: - SUCCESS CELL OUTPUT -
 extension HomeTipsSection: HomeTipsSectionSuccessDelegate {
-    
+    func didTapTipPreference(type: TipActionEnum) {
+        self.presenter?.didTapTipPreference(type: type)
+    }
 }
 

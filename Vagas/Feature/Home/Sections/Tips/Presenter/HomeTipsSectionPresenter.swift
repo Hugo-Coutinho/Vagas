@@ -9,10 +9,12 @@
 import Foundation
 
 class HomeTipsSectionPresenter: HomeTipsSectionPresenterInput {
-    
     // MARK: - VARIABLES -
     var output: HomeTipsSectionPresenterOutput?
     var input: HomeTipsInteractorInput?
+    
+    // MARK: - PRIVATE VARIABLES -
+    private var tipId: String = ""
     
     // MARK: - CONSTRUCTORS -
     init(input: HomeTipsInteractorInput, output: HomeTipsSectionPresenterOutput) {
@@ -24,11 +26,16 @@ class HomeTipsSectionPresenter: HomeTipsSectionPresenterInput {
     func getTips() {
         self.input?.getTips()
     }
+    
+    func didTapTipPreference(type: TipActionEnum) {
+        self.input?.didTapTipPreference(action: type, tipId: self.tipId)
+    }
 }
 
 // MARK: - INTERACTOR OUTPUT -
 extension HomeTipsSectionPresenter: HomeTipsInteractorOutput {
     func handleSuccess(tips: Tips) {
+        self.tipId = tips.first?.id ?? ""
         self.output?.handleSuccess(tips: HomeTipsSectionDomain(tips: tips))
     }
     

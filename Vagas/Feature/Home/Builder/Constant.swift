@@ -16,6 +16,7 @@ struct Constant {
         public static let id = "ee09bd39-4ca2-47ac-9c5e-9c57ba5a26dc"
         public static let suggestion = "suggestion"
         public static let tips = "tips"
+        public static let survey = "survey/tips/"
         
         struct Header {
             public static let Authorization = "Authorization"

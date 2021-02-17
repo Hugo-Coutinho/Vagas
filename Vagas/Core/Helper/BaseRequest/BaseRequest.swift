@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 
 class BaseRequest {
-    class func doRequest(url: String, header: [String: String]? = [:], completionHandler: @escaping (Data) -> Void) {
-        Alamofire.request(url, headers: header).validate(statusCode: 200..<300).responseJSON { result -> Void in
+    class func doRequest(method: HTTPMethod = .get, url: String, header: [String: String]? = [:], completionHandler: @escaping (Data) -> Void) {
+        Alamofire.request(url, method: method, headers: header).validate(statusCode: 200..<300).responseJSON { result -> Void in
                 if let data = result.data {
                     completionHandler(data)
             } else {

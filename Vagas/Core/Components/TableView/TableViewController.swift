@@ -80,6 +80,7 @@ extension TableViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier:identifier, for:indexPath)
         
         cell.clipsToBounds = true
+        cell.selectionStyle = .none
         
         (section as? TableSectionCellInput)?.willDisplayCell(cell, at: indexPath)
         

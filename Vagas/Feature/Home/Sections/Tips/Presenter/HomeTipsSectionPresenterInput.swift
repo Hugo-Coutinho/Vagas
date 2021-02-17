@@ -17,6 +17,7 @@ protocol HomeTipsSectionPresenterInput: class {
     
     // MARK: - INPUT METHODS -
     func getTips()
+    func didTapTipPreference(type: TipActionEnum)
 }
 
 // MARK: - PRESENTER OUTPUT PROTOCOL -

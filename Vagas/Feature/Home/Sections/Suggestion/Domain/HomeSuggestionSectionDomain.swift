@@ -59,3 +59,9 @@ struct SuggestionItemDomain {
     let title, companyName, date, positionDetail, salary: String
     var buttonTitle: String
 }
+
+// MARK: - TIP ACTION TYPE -
+enum TipActionEnum: String {
+    case like = "like"
+    case disLike = "dislike"
+}
