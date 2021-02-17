@@ -31,7 +31,7 @@ extension HomeSuggestionSectionDomain {
                 else { return nil }
             let positionDetail = self.mapPositionDetail(locations: locations, totalPositions: totalositions)
             let salaryMapped = self.mapSalaryText(salary: salary)
-            return SuggestionItemDomain(title: title, companyName: companyTitle, date: date, positionDetail: positionDetail, salary: salaryMapped)
+            return SuggestionItemDomain(title: title, companyName: companyTitle, date: date, positionDetail: positionDetail, salary: salaryMapped, buttonTitle: Constant.View.defaultButtonTitle)
         })
     }
 
@@ -57,4 +57,5 @@ extension HomeSuggestionSectionDomain {
 // MARK: - SUGGESTION ITEM -
 struct SuggestionItemDomain {
     let title, companyName, date, positionDetail, salary: String
+    var buttonTitle: String
 }

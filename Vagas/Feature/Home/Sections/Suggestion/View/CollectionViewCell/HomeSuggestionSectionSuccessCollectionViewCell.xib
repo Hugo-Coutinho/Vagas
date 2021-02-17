@@ -83,6 +83,9 @@
                                 <state key="normal" title="Enviar Currículo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Vl-xr-M8q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -124,6 +127,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="82" height="115"/>
             <connections>
+                <outlet property="buttonCell" destination="1a1-ka-yy7" id="1M0-SR-qc3"/>
                 <outlet property="companyNameLabel" destination="pSs-lk-acE" id="JlI-Wq-Rkq"/>
                 <outlet property="dateLabel" destination="S4W-6p-XVi" id="WI7-3g-iA9"/>
                 <outlet property="positionDetailLabel" destination="9EA-yg-rw5" id="Vhd-Db-CjZ"/>

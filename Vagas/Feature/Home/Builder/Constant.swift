@@ -23,8 +23,14 @@ struct Constant {
         }
     }
     
+    struct View {
+        public static let userDidSendCVButtonTitle = "CV enviado"
+        public static let defaultButtonTitle = "ENVIAR CURRÍCULO"
+    }
+    
     struct ImageName {
         public static let user = "user"
+        
     }
 }
 

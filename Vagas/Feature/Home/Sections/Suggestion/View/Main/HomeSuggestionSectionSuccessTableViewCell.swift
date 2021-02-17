@@ -27,6 +27,8 @@ class HomeSuggestionSectionSuccessTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.setupCollectionView()
     }
+    
+    
 
     // MARK: - SETUP -
     func setup(suggestion: HomeSuggestionSectionDomain) {
@@ -59,6 +61,7 @@ extension HomeSuggestionSectionSuccessTableViewCell: UICollectionViewDataSource 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: HomeSuggestionSectionSuccessCollectionViewCell = self.collectionView.dequeueReusableCell(for: indexPath)
         let item = self.suggestion.suggestions[indexPath.row]
+        cell.row = indexPath.row
         cell.setup(suggestion: item, output: self)
         return cell
     }
@@ -82,5 +85,7 @@ extension HomeSuggestionSectionSuccessTableViewCell: UICollectionViewDelegateFlo
 
 //MARK: - COLLECTION VIEW OUTPUT -
 extension HomeSuggestionSectionSuccessTableViewCell: HomeSuggestionSectionSuccessCollectionOutput {
-    
+    func didTapSendCV(row: Int) {
+        self.suggestion.suggestions[row].buttonTitle = Constant.View.userDidSendCVButtonTitle
+    }
 }
